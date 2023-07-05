@@ -8,18 +8,22 @@
 </head>
 <body>
     <div class="image-overlay">
-        <section>
-            <h1 id="title">University Survey Form</h1>
-            <p id="description">Congratulations on completing your UG programme. Help us improve the experience. </p>
+        <section class="heading">
+            <h1 id="title" style="font-weight: 600;">University Survey Form</h1>
+            <p id="description"><i>Congratulations on completing your UG programme. Help us improve the experience. </i></p>
         </section>
   
         <section>
           <form id="survey-form">
-            <label for="name">Name</label><input type="text" id="name">
-            <label for="email">E-mail</label><input type="email" id="email" required>
-            
+            <label for="name">Name</label><input type="text" id="name" placeholder="Enter your name" required>
+            <label for="email">Email</label><input type="email" id="email" placeholder="Enter your Email" required>
+            <label for="dob">Date of Birth</label><input type="date" id="dob" placeholder="Enter your Date of Birth" required>
+            <label for="overall">Which option best describes your overall experience?</label><input list="rating" id="overall" required>
+            <datalist id="ratings">
+              <option value="Loved it"></option>
+            </datalist>
           </form>
-        </section>>
+        </section>
     </div>
 </body>
 </html>
