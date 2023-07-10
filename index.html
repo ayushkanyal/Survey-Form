@@ -9,19 +9,42 @@
 <body>
     <div class="image-overlay">
         <section class="heading">
-            <h1 id="title" style="font-weight: 600;">University Survey Form</h1>
-            <p id="description"><i>Congratulations on completing your UG programme. Help us improve the experience. </i></p>
+            <h1 id="title" style="font-weight: 600; font-size: xx-large; margin-bottom: 1%;">University Survey Form</h1>
+            <p id="description" style="margin-bottom: 2%;"><i>Congratulations on completing your UG programme. Help us improve the experience. </i></p>
         </section>
   
         <section>
           <form id="survey-form">
-            <label for="name">Name</label><input type="text" id="name" placeholder="Enter your name" required>
-            <label for="email">Email</label><input type="email" id="email" placeholder="Enter your Email" required>
-            <label for="dob">Date of Birth</label><input type="date" id="dob" placeholder="Enter your Date of Birth" required>
-            <label for="overall">Which option best describes your overall experience?</label><input list="rating" id="overall" required>
-            <datalist id="ratings">
-              <option value="Loved it"></option>
-            </datalist>
+            <p>Name</p><input type="text" id="name" placeholder="Enter your name" required>
+            <p>Email</p><input type="email" id="email" placeholder="Enter your Email" required>
+            <p>Date of Birth</p><input type="date" id="dob" placeholder="Enter your Date of Birth" required>
+            <p>Branch</p><select style="width: 100%;" id="branch"  required>
+              <option disabled selected value>Select your Branch</option>
+              <option value="Agricultural Engineering">Agricultural Engineering</option>
+              <option value="Civil Engineering">Civil Engineering</option>
+              <option value="Computer Engineering">Computer Engineering</option>
+              <option value="Electronics and Communication Engineering">Electronics and Communication Engineering</option>
+              <option value="Electrical Engineering">Electrical Engineering</option>
+              <option value="Information Technology">Information Technology</option>
+              <option value="Industrial and Production Engineering">Industrial and Production Engineering</option>
+              <option value="Mechanical Engineering">Mechanical Engineering</option>
+              <option value="Bio-technology Engineering">Bio-technology Engineering</option>
+            
+            </select>
+            <p>Would you recomendd College Of Technology to a friend?</p>
+            
+            <div class="form-element">
+              
+              <div class="radio">
+                <label><input type="radio" id="recommendation1">Defenitely</label>
+              </div>
+              <div class="radio">
+              <label><input type="radio" id="recommendation2">Maybe</label>
+              </div>
+              <div class="radio">
+              <label><input type="radio" id="recommendation3">Not Sure</label>
+              </div>
+            </div>
           </form>
         </section>
     </div>
