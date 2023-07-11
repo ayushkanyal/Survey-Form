@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="CSS/styles.css">
 </head>
 <body>
-    <div class="image-overlay">
+    
         <section class="heading">
             <h1 id="title" style="font-weight: 600; font-size: xx-large; margin-bottom: 1%;">University Survey Form</h1>
             <p id="description" style="margin-bottom: 2%;"><i>Congratulations on completing your UG programme. Help us improve the experience. </i></p>
@@ -15,10 +15,10 @@
   
         <section>
           <form id="survey-form">
-            <p>Name</p><input type="text" id="name" placeholder="Enter your name" required>
-            <p>Email</p><input type="email" id="email" placeholder="Enter your Email" required>
-            <p>Date of Birth</p><input type="date" id="dob" placeholder="Enter your Date of Birth" required>
-            <p>Branch</p><select style="width: 100%;" id="branch"  required>
+            <p>Name</p><input type="text" id="name" placeholder="Enter your name" >
+            <p>Email</p><input type="email" id="email" placeholder="Enter your Email">
+            <p>Date of Birth</p><input type="date" id="dob" placeholder="Enter your Date of Birth">
+            <p>Branch</p><select id="branch">
               <option disabled selected value>Select your Branch</option>
               <option value="Agricultural Engineering">Agricultural Engineering</option>
               <option value="Civil Engineering">Civil Engineering</option>
@@ -32,21 +32,42 @@
             
             </select>
             <p>Would you recomendd College Of Technology to a friend?</p>
-            
-            <div class="form-element">
-              
-              <div class="radio">
-                <label><input type="radio" id="recommendation1">Defenitely</label>
-              </div>
-              <div class="radio">
-              <label><input type="radio" id="recommendation2">Maybe</label>
-              </div>
-              <div class="radio">
-              <label><input type="radio" id="recommendation3">Not Sure</label>
-              </div>
-            </div>
+            <section>
+              <label><input name="recommend" type="radio" id="recommendation1">Definitely</label><br>  
+              <label><input name="recommend" type="radio" id="recommendation2">Maybe</label><br>    
+              <label><input name="recommend" type="radio" id="recommendation3">Not Sure</label><br>
+            </section> 
+            <p>What was your favorite part about your degree programme?</p>
+            <select id="favorite">
+              <option disabled selected value>Select an Option</option>
+              <option>Classroom teaching</option>
+              <option>Laboratory Work</option>
+              <option>Library resources and enviorment</option>
+              <option>Center Computing Facility</option>
+              <option>Sporting facilities</option>
+              <option>Extra-curricular activities</option>
+              <option>Hostel Life</option>
+              <textarea placeholder="Other(please specify)"></textarea>
+            </select>
+            <p>What would you like to see improved<a>    (Check all that apply)</a></p>
+            <section>
+              <label><input  type="checkbox" id="improve1">Academic coursework</label><br>  
+              <label><input  type="checkbox" id="improve2">Assignments</label><br>    
+              <label><input  type="checkbox" id="improve3">Laboratory Equipment</label><br>
+              <label><input  type="checkbox" id="improve4">Tours</label><br>
+              <label><input  type="checkbox" id="improve5">Project Work</label><br>
+              <label><input  type="checkbox" id="improve6">Classroom Teaching</label><br>
+              <label><input  type="checkbox" id="improve7">Open Electives</label><br>
+              <label><input  type="checkbox" id="improve8">Hostel Infrastructure</label><br>
+              <label><input  type="checkbox" id="improve9">Co-curricular</label><br>
+            </section>
+            <p>Any comments or Suggestions?</p>
+            <textarea id="comment" placeholder="Enter your comment here..."></textarea>
+
+            <button type="submit">Submit</button>
           </form>
+          
         </section>
-    </div>
+    
 </body>
 </html>
